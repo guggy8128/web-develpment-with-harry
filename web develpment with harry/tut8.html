@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="tut8.css">
+</head>
+
+<body>
+    <h2>This is form tutorial</h2>
+    <hr>
+    <form action="backend.php">
+        <label for="Name"></label>
+        <div>
+            Name: <input type="Name" name="MyName" id="Name">
+        </div>
+        <br>
+        <div>
+            Role <input type="Role" name="MyRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="MyEmail" id="">
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="MyGender" id=""> Female<input type="radio" name="MyGender"
+                id="">other<input type="radio" name="MyGender" id="">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="Date" id="">
+        </div>
+        <br>
+        <div>
+            bonus <input type="number" name="bonus" id="">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="My Eligiblity" id="" checked>
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="MyText" id="" cols="100" rows="3"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">indica</option>
+                <option value="swf" selected>swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input style="width: 100%; " type="submit" value="Submit Now">
+            <br><br>
+            <input style="width: 100%;" type="reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+
+</html>

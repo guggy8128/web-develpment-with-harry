@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str = "This is An String"
+        console.log(str)
+
+        var position = str.indexOf('is');
+        console.log(position)
+
+        var position = str.lastIndexOf('is');
+        console.log(position)
+
+        // var cut = str.slice(1,6);
+        // var cut = str.substring(1,6);
+        var cut = str.substr(1,6);
+        console.log(cut)
+
+        var replaced = str.replace('string', 'Dharmesh')
+        console.log(replaced)
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+    </script>
+</body>
+</html>

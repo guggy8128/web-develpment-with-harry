@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        
+        body{background: url(https://source.unsplash.com/random) no-repeat center center/cover;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        header::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+        .navigation{
+            background: url(https://source.unsplash.com/random)   no-repeat center center/cover;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 20px;
+            display: flex;    
+            justify-content: space-between;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+        }
+        @media (max-width: 768px){
+            .navigation{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .navigation li{
+            list-style: none;
+            margin: 14px 14px;
+        }
+        .navigation li:hover{
+            /* border-radius: 15px; */
+            /* color: rebeccapurple; */
+            /* background-color: black; */
+            cursor: pointer;
+        }
+        section{
+            
+        }
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content:"This is a content";
+        } */
+        /* section::after{
+            content:"This is a content";
+        } */
+        input[type="search"]{
+            border: 2px solid black;
+            padding: 0px 10px;
+            margin: 0px;
+            border-radius: 15px;
+            width: 26%;
+            display: block;
+            height: 27px;
+            margin-top: 15px;
+            margin-left: 525px;
+            text-align: center;
+            font-size: 1.0rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+        }
+        @media (max-width: 768px){
+            input[type="search"]{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            .box input{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                border-radius: 7px;
+                height: 50px;
+                margin-top: 10px;
+                margin-left: 0px;
+                font-size: 1.0rem;
+                font-family: 'Baloo Bhai 2', cursive;
+                font-weight: bold;
+                margin-bottom: 100px;
+            }
+            
+        }
+        .box{
+            /* z-index: -1; */
+            /* opacity: 0.6; */
+            cursor: pointer;
+            box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+            display: inline-block;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            border-radius: 15px;
+            background: url(https://source.unsplash.com/random) no-repeat center center/cover;
+            text-align: center;
+            font-size: 1.0rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            display: inline-block;
+            padding: 100px 0 0 0;
+            
+        }
+        @media (max-width: 768px){
+            .box{
+                width: 100%;
+                height: 100%;
+                margin: 10px;
+            }
+            .box input{
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+            }
+        }
+        .box::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+        #box-1{
+            /* z-index: 1; */
+            /* opacity: 0.6; */
+            /* position: absolute; */
+            /* float: left; */
+            /* display: flex; */
+        }
+        #box-1 input{
+            width: 100px;
+        }
+
+        #box-2{
+            /* z-index: 1; */
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-2 input{
+            width: 100px;
+        }
+        #box-3{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-3 input{
+            width: 100px;
+        }
+        #box-4{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-4 input{
+            width: 100px;
+        }
+        #box-5{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-5 input{
+            width: 100px;
+        }
+        #box-6{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-6 input{
+            width: 100px;
+        }
+        #box-7{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-7 input{
+            width: 100px;
+        }
+        #box-8{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-8 input{
+            width: 100px;
+        }
+        #box-9{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-9 input{
+            width: 100px;
+        }
+        #box-10{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-10 input{
+            width: 100px;
+        }
+        #box-11{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-11 input{
+            width: 100px;
+        }
+        #box-12{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-12 input{
+            width: 100px;
+        }
+        #box-13{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-13 input{
+            width: 100px;
+        }
+        #box-14{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-14 input{
+            width: 100px;
+        }
+        #box-15{
+            /* opacity: 0.6; */
+            /* position: absolute; */
+        }
+        #box-15 input{
+            width: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+                <input type="search" name="search" id="search" placeholder="Search">
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <div class="box" id="box-1">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="box" id="box-2">
+                <input type="datetime" name="" id="" placeholder="Enter your name">
+            </div>
+            <div class="box" id="box-3">
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="box" id="box-4">
+                <input type="tel" name="tel" id="tel" placeholder="Enter your phone number">
+            </div>
+            <div class="box" id="box-5">
+                <input type="url" name="url" id="url" placeholder="Enter your website">
+            </div>
+            <div class="box" id="box-6">
+                <input type="date" name="date" id="date" placeholder="Enter your date of birth">
+            </div>
+            <div class="box" id="box-7">
+                <input type="time" name="time" id="time" placeholder="Enter your time of birth">
+            </div>
+            <div class="box" id="box-8">
+                <input type="number" name="number" id="number" placeholder="Enter your age">
+            </div>
+            <div class="box" id="box-9">
+                <input type="range" name="range" id="range" placeholder="Enter your age">
+            </div>
+            <div class="box" id="box-10">
+                <input type="color" name="color" id="color" placeholder="Enter your age">
+            </div>
+            <div class="box" id="box-11">
+                <input type="checkbox" name="checkbox" id="checkbox" placeholder="Enter your age">
+            </div>
+            <div class="box" id="box-12">
+                <input type="radio" name="radio" id="radio" placeholder="Enter your age">
+            </div>
+            <div class="box" id="box-13">
+                <input type="file" name="file" id="file" placeholder="Enter your age">
+            </div>
+            <div class="box" id="box-14">
+                <input type="submit" name="submit" id="submit" placeholder="Enter your age">
+            </div>
+            <div class="box" id="box-15">
+                <input type="reset" name="reset" id="reset" placeholder="Enter your age">
+            </div>
+        </section>
+</body>
+</html>

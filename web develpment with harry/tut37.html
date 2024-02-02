@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 80vh;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+            /* text-align: center; */
+            border: 2px solid black;
+            background-color: rebeccapurple;
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            color: white;
+            transition: all 2s ease-in-out;
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: scale(1.5); */
+            /* transform: perspective(500px) rotateY(360deg);     */
+            /* transform: rotateY(360deg); */
+            /* transform: rotate(360deg); */
+            /* transform: translate(100px, 100px); */
+            /* transform: translate(600px, 100px); */
+
+
+            transform: translateX(600px);
+            /* transform: translate(100px, 100px) rotate(360deg); */
+            /* transform: translate(100px, 100px) rotate(360deg) scale(1.5); */
+            /* transform: translate(100px, 100px) rotate(360deg) scale(1.5) skew(30deg); */
+            /* transform: translate(100px, 100px) rotate(360deg) scale(1.5) skew(30deg) perspective(500px); */
+            /* transform: translate(100px, 100px) rotate(360deg) scale(1.5) skew(30deg) perspective(500px) rotateY(360deg); */
+            /* transform: translate(100px, 100px) rotate(360deg) scale(1.5) skew(30deg) perspective(500px) rotateY(360deg) translate(100px, 100px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

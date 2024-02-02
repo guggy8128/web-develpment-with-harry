@@ -1,0 +1,49 @@
+*{
+    background-color: #333;
+}
+h2{
+    text-align: center;
+    color:#333;
+    background-color: a;
+    padding: 40px;
+    margin: 30px;
+    background-color: rgb(0, 255, 255);
+    border: rgb(70, 70, 70) 2px solid;
+}
+
+div input:focus{
+    background-color: rgb(0, 255, 255);
+}
+div label,option,select,textarea,input{
+    background-color: aqua;
+}
+
+body {
+    padding: 50px;
+    margin: 30px;
+    border: rgb(177, 176, 176) solid 5px;
+    border-radius: 30px;
+    color: aliceblue;
+    background-color: aqua;
+}
+form{
+    background-color: aqua;
+}
+input{
+    background-color: aqua;
+}
+input:focus{
+    background-color: rgb(0, 255, 255);
+}
+input:hover{
+    background-color: rgb(0, 255, 255);
+}
+div{
+    border: white ;
+    color: #333;
+    background-color: aqua;
+    
+}
+hr{
+    border: black solid 1px;
+}

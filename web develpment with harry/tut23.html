@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        .navbar{
+            border-radius: 13px;
+            background-color: rgb(47, 102, 156);
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar ul li{
+            float: left;
+            list-style: none;
+            padding: 10px 15px;
+            padding-top: 7px;
+        }
+        .navbar ul li:hover{    
+            background-color: rgb(57, 145, 221);
+            color: rgb(255, 255, 255);  
+            border-radius: 18px;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar ul li a:hover{
+            /* background-color: aqua; */
+            border-radius: 17px;
+            color: black;
+        }
+        .search{
+            float: right;
+            padding: 7px 75px;
+            color: white;
+        }
+        .navbar input{
+            border: 2px solid rgb(16, 58, 99);
+            border-radius: 9px;
+            padding: 5px 10px;
+            width: 232px;
+            height: 11px;
+        } 
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="tut23.html">Home</a></li>
+                <li><a href="tut23.html">About</a></li>
+                <li><a href="tut23.html">Contact</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="serch" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="tut23.html">Home</a></li>
+                <li><a href="tut23.html">About</a></li>
+                <li><a href="tut23.html">Contact</a></li>
+                <div class="search-1">
+                    <input type="text" name="search-1" id="serch-1" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 2px solid purple;
+            background-color: rgb(247, 255, 210);
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 5px;
+            background-color: antiquewhite;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            /* clear: left; */
+            clear: both;
+            /* this will clear the float */
+            width: 100%;
+        }
+
+        h1 {
+            margin: 20px auto; 
+            width: 50%;
+        }
+
+        p,
+        h3 {
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcom to my channel</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores fuga
+                accusantium mollitia, in hic illo eum reiciendis alias. Deserunt repudiandae eligendi perspiciatis
+                molestiae rerum, ex illo aut, minima atque dolore, blanditiis quidem voluptatem. Blanditiis? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Nostrum, fuga exercitationem? Ipsum iure autem amet
+                expedita placeat nemo modi itaque? Eligendi repellendus provident iusto voluptatum sint incidunt natus
+                minima quasi!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores fuga
+                accusantium mollitia, in hic illo eum reiciendis alias. Deserunt repudiandae eligendi perspiciatis
+                molestiae rerum, ex illo aut, minima atque dolore, blanditiis quidem voluptatem. Blanditiis? Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Omnis ad quod illo quisquam corporis sint doloremque
+                ullam. Iusto vitae dicta, eos deleniti quam incidunt, fugit neque cum, a ducimus dolore?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores fuga
+                accusantium mollitia, in hic illo eum reiciendis alias. Deserunt repudiandae eligendi perspiciatis
+                molestiae rerum, ex illo aut, minima atque dolore, blanditiis quidem voluptatem. Blanditiis?</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores fuga
+                accusantium mollitia, in hic illo eum reiciendis alias. Deserunt repudiandae eligendi perspiciatis
+                molestiae rerum, ex illo aut, minima atque dolore, blanditiis quidem voluptatem. Blanditiis?</p>
+        </div>
+</body>
+
+</html>

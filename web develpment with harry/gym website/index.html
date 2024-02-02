@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharmesh fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        /* CSS reset */
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url('/gym website/image/pexels-victor-freitas-841130.jpg') 
+            /* no-repeat center center fixed; */   
+        }
+        .left{
+            left: 34px;
+            top: 18px;
+            position: absolute;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+        .left img{
+            /* padding:  0 0 0 40px; */
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 0 0 157px;
+        }
+        .left div{
+            margin: 0 0 0 0px;
+            text-align: center;
+            font-size: 60px;
+        }
+        .mid{
+            display: block;
+            width: 36%;
+            margin: 60px auto;
+            /* border: 2px solid green; */
+
+        }
+        .right{
+            margin: 60px auto;
+            right: 34px;
+            top: 18px;
+            position: absolute;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 40px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px;
+            font-size: 70px;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: underline;
+            color: gray;
+        }
+        .btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 40px;
+            margin: 10px;
+            padding: 20px 60px;
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgba(0,0,0,0.5);
+            color: black;
+        }   
+        .container{
+            /* border: 2px solid white; */
+            margin: 350px 150px;
+            padding: 100px;
+            width: 33%;
+            border-radius: 30px;
+            background-color: rgba(0,0,0,0.5);
+            font-size: 40px;
+        }
+        .container:hover{
+            background-color: rgba(0,0,0,0.7);
+        }
+        .form-group input{
+            font-family:    'Baloo Bhai 2', cursive;
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            width: 80%;
+            border: 2px solid black;
+            border-radius: 30px;
+            padding: 20px;
+            font-size: 40px;
+        }
+        .container input{
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            
+            display: block;
+            width: 84%;
+            margin: 20px auto;
+        }
+        .container button:hover{
+            background-color: rgba(151, 151, 151, 0.5);
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="/gym website/image/istockphoto-1331186720-612x612.jpg" alt="">
+            <div>Dharmesh Fitness</div>
+        </div>
+        <!-- right box for navigation -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Fitnes Calculator</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- right box for login and signup -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us Now</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of gjrat now </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form> 
+    </div>
+</body>
+</html>
